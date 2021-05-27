@@ -1,0 +1,6 @@
+FileVersion = 1
+Dependencies = {corlib = "*", BeefLog = "*"}
+
+[Project]
+Name = "Example"
+StartupObject = "Example.Program"

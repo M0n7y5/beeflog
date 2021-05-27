@@ -1,0 +1,6 @@
+FileVersion = 1
+
+[Project]
+Name = "BeefLog"
+TargetType = "BeefLib"
+StartupObject = "BeefLog.Program"
