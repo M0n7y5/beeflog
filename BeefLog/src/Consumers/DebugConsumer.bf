@@ -1,13 +1,11 @@
 using BeefLog.Interfaces;
 using BeefLog.Types;
 using BeefLog.Formatters;
-using System;
 namespace BeefLog.Consumers
 {
-	class ConsoleConsumer : ILogConsumer
+	class DebugConsumer : ILogConsumer
 	{
 		private readonly ILoggerFormatter _formatter;
-		private bool isColored = false;
 
 		public this(ILoggerFormatter formatter)
 		{
@@ -26,10 +24,7 @@ namespace BeefLog.Consumers
 
 		public void Consume(LogMessage message)
 		{
-			
-
-
-			Console.WriteLine(_formatter.ApplyFormat(message, .. scope .()));
+			DebugConsumer.WriteLine(_formatter.ApplyFormat(message, .. scope .()));
 		}
 	}
 }
