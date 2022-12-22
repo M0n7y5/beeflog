@@ -1,14 +1,14 @@
 FileVersion = 1
 LastConfig = "Debug"
 LastPlatform = "Win64"
-RecentFilesList = ["c:\\bezAV\\BeefProjjj\\BeefLog\\Example\\src\\Program.bf", "src\\Logger.bf", "src\\Types\\LogMessage.bf", "src\\Enums\\Level.bf"]
+RecentFilesList = ["c:\\Users\\admin\\beeflog\\Example\\src\\Program.bf", "src\\Consumers\\ConsoleConsumer.bf", "src\\Formatters\\ColorHelper.bf", "src\\Formatters\\DefaultFormatter.bf", "src\\Attributes\\LogExecutionTimeAttribute.bf", "src\\Types\\LogMessage.bf", "src\\Logger.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\ConsoleColor.bf", "c:\\bezAV\\BeefProjjj\\BeefLog\\Example\\src\\Program.bf"]
 
 [MainWindow]
-X = 394
-Y = 146
-Width = 1472
-Height = 1014
-ShowKind = "Maximized"
+X = 395
+Y = 204
+Width = 2000
+Height = 1096
+ShowKind = "ShowMaximized"
 
 [MainDockingFrame]
 Type = "DockingFrame"
@@ -37,6 +37,7 @@ Type = "TabbedView"
 Active = true
 TabLabel = "Workspace"
 TabWidth = 115.0
+TabIsPinned = false
 Type = "ProjectPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets]]
@@ -44,51 +45,83 @@ IsFillWidget = true
 Permanent = true
 RequestedWidth = 150.0
 RequestedHeight = 150.0
-SizePriority = 0.5195946
+SizePriority = 0.470283
+DefaultDocumentsTabbedView = true
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
+TabLabel = "Program.bf"
+TabWidth = 106.0
+TabIsPinned = true
+Type = "SourceViewPanel"
+FilePath = "c:\\Users\\admin\\beeflog\\Example\\src\\Program.bf"
+CursorPos = 584
+ProjectName = "Example"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "LogMessage.bf"
+TabWidth = 130.0
+TabIsPinned = false
+Type = "SourceViewPanel"
+FilePath = "src\\Types\\LogMessage.bf"
+CursorPos = 84
+ProjectName = "BeefLog"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "DefaultFormatter.bf"
+TabWidth = 152.0
+TabIsPinned = false
+Type = "SourceViewPanel"
+FilePath = "src\\Formatters\\DefaultFormatter.bf"
+CursorPos = 341
+ProjectName = "BeefLog"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "ColorHelper.bf"
+TabWidth = 125.0
+TabIsPinned = false
+Type = "SourceViewPanel"
+FilePath = "src\\Formatters\\ColorHelper.bf"
+CursorPos = 82
+ProjectName = "BeefLog"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "LogExecutionTimeAttribute.bf"
+TabWidth = 210.0
+TabIsPinned = false
+Type = "SourceViewPanel"
+FilePath = "src\\Attributes\\LogExecutionTimeAttribute.bf"
+CursorPos = 663
+ProjectName = "BeefLog"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Logger.bf"
-TabWidth = 96.0
+TabWidth = 86.0
+TabIsPinned = false
 Type = "SourceViewPanel"
 FilePath = "src\\Logger.bf"
-CursorPos = 542
-VertPos = 378.0
+CursorPos = 791
+VertPos = 480.0
 ProjectName = "BeefLog"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets]]
 IsFillWidget = true
 RequestedWidth = 1476.0
 RequestedHeight = 809.0
-SizePriority = 0.4804054
-DefaultDocumentsTabbedView = true
+SizePriority = 0.529717
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
-TabLabel = "LogMessage.bf"
-TabWidth = 130.0
-Type = "SourceViewPanel"
-FilePath = "src\\Types\\LogMessage.bf"
-CursorPos = 226
-ProjectName = "BeefLog"
-
-[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
-TabLabel = "Level.bf"
-TabWidth = 84.0
-Type = "SourceViewPanel"
-FilePath = "src\\Enums\\Level.bf"
-CursorPos = 76
-ProjectName = "BeefLog"
-
-[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
-TabLabel = "Program.bf"
-TabWidth = 106.0
+TabLabel = "ConsoleConsumer.bf"
+TabWidth = 160.0
+TabIsPinned = false
 Type = "SourceViewPanel"
-FilePath = "c:\\bezAV\\BeefProjjj\\BeefLog\\Example\\src\\Program.bf"
-CursorPos = 243
-ProjectName = "Example"
+FilePath = "src\\Consumers\\ConsoleConsumer.bf"
+CursorPos = 1004
+VertPos = 120.0
+ProjectName = "BeefLog"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets]]
 RequestedWidth = 205.0
@@ -99,11 +132,24 @@ Type = "TabbedView"
 Active = true
 TabLabel = "Class View"
 TabWidth = 111.0
+TabIsPinned = false
 Type = "ClassViewPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets]]
+RequestedWidth = 1120.0
+RequestedHeight = 379.0
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "Output"
+TabWidth = 90.0
+TabIsPinned = false
+Type = "OutputPanel"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
 RequestedWidth = 312.0
-RequestedHeight = 284.0
+RequestedHeight = 241.0
 Type = "DockingFrame"
 SplitType = 1
 
@@ -114,35 +160,41 @@ SizePriority = 0.4796663
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
 TabLabel = "Auto Watches"
 TabWidth = 130.0
+TabIsPinned = false
 Type = "AutoWatchPanel"
-Columns = [{Width = 149.0}, {Width = 661.0}, {Width = 200.0}]
+Columns = [{Width = 275.0}, {Width = 661.0}, {Width = 200.0}]
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Profile"
 TabWidth = 87.0
+TabIsPinned = false
 Type = "ProfilePanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Modules"
 TabWidth = 101.0
+TabIsPinned = false
 Type = "ModulePanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
-Active = true
 TabLabel = "Errors"
 TabWidth = 86.0
+TabIsPinned = false
 Type = "ErrorsPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Breakpoints"
 TabWidth = 118.0
+TabIsPinned = false
 Type = "BreakpointPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Memory"
 TabWidth = 99.0
+TabIsPinned = false
 Type = "MemoryPanel"
 AutoResize = "Auto_Mul8"
 RequestedWidth = 434.0
@@ -150,6 +202,7 @@ RequestedWidth = 434.0
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Watch"
 TabWidth = 86.0
+TabIsPinned = false
 Type = "WatchPanel"
 Columns = [{Width = 222.0}, {Width = 250.0}, {Width = 112.0}]
 
@@ -160,27 +213,39 @@ SizePriority = 0.5203336
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
 TabLabel = "Threads"
 TabWidth = 97.0
+TabIsPinned = false
 Type = "ThreadPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Find Results"
 TabWidth = 119.0
+TabIsPinned = false
 Type = "FindResultsPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Call Stack"
 TabWidth = 105.0
+TabIsPinned = false
 Type = "CallStackPanel"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Immediate"
 TabWidth = 111.0
+TabIsPinned = false
 Type = "ImmediatePanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
-Active = true
-TabLabel = "Output"
-TabWidth = 90.0
-Type = "OutputPanel"
+[[Breakpoints]]
+File = "src\\Attributes\\LogExecutionTimeAttribute.bf"
+Line = 13
+Column = 2
+
+[[Breakpoints]]
+File = "src\\Attributes\\LogExecutionTimeAttribute.bf"
+Line = 27
+Column = 3
+
+[[BookmarkFolders]]
+Title = ""

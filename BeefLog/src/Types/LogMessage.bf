@@ -7,7 +7,7 @@ namespace BeefLog.Types
 		DateTime DateTime,
 		Level Level,
 		StringView Text,
-		StringView CallingClass,
+		StringView FileName,
 		StringView CallingMethod,
 		int LineNumber)
 	{

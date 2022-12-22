@@ -32,54 +32,54 @@ namespace BeefLog
 			delete LogPublisher;
 		}
 
-		public static void Log(Level level, String message, String className = Compiler.ModuleName,
+		public static void Log(Level level, String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			var msg = LogMessage(.Now, level, message, className, callingMethod, lineNumber);
+			var msg = LogMessage(.Now, level, message, filename, callingMethod, lineNumber);
 			LogPublisher.Publish(msg);
 		}
 
-		public static void Debug(String message, String className = Compiler.ModuleName,
+		public static void Debug(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Debug, message, className, callingMethod, lineNumber);
+			Log(.Debug, message, filename, callingMethod, lineNumber);
 		}
 
-		public static void Success(String message, String className = Compiler.ModuleName,
+		public static void Success(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Success, message, className, callingMethod, lineNumber);
+			Log(.Success, message, filename, callingMethod, lineNumber);
 		}
 
-		public static void Info(String message, String className = Compiler.ModuleName,
+		public static void Info(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Info, message, className, callingMethod, lineNumber);
+			Log(.Info, message, filename, callingMethod, lineNumber);
 		}
 
-		public static void Warning(String message, String className = Compiler.ModuleName,
+		public static void Warning(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Warning, message, className, callingMethod, lineNumber);
+			Log(.Warning, message, filename, callingMethod, lineNumber);
 		}
 
-		public static void Error(String message, String className = Compiler.ModuleName,
+		public static void Error(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Error, message, className, callingMethod, lineNumber);
+			Log(.Error, message, filename, callingMethod, lineNumber);
 		}
 
-		public static void Fatal(String message, String className = Compiler.ModuleName,
+		public static void Fatal(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Fatal, message, className, callingMethod, lineNumber);
+			Log(.Fatal, message, filename, callingMethod, lineNumber);
 		}
 
 		[Obsolete("This log level is not implemented yet", true)]
-		public static void Exception(String message, String className = Compiler.ModuleName,
+		public static void Exception(String message, String filename = Compiler.CallerFileName,
 			String callingMethod = Compiler.CallerMemberName, int lineNumber = Compiler.CallerLineNum)
 		{
-			Log(.Exception, message, className, callingMethod, lineNumber);
+			Log(.Exception, message, filename, callingMethod, lineNumber);
 		}
 	}
 }

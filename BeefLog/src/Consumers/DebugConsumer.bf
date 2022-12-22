@@ -1,6 +1,7 @@
 using BeefLog.Interfaces;
 using BeefLog.Types;
 using BeefLog.Formatters;
+using System.Diagnostics;
 namespace BeefLog.Consumers
 {
 	class DebugConsumer : ILogConsumer
@@ -24,7 +25,7 @@ namespace BeefLog.Consumers
 
 		public void Consume(LogMessage message)
 		{
-			DebugConsumer.WriteLine(_formatter.ApplyFormat(message, .. scope .()));
+			Debug.WriteLine(_formatter.ApplyFormat(message, .. scope .()));
 		}
 	}
 }
